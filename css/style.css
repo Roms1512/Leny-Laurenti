@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+}
+
+img {
+  object-fit: cover;
+}
+
+/*---------- header ----------*/
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/background.jpg);
+  position: relative;
+}
+header .nav {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.783), rgba(0, 0, 0, 0.591), transparent, transparent, transparent, transparent, transparent, transparent);
+}
+header .nav nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  color: #f1f1f1;
+  background: #000;
+}
+header .nav nav h1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+header .nav nav .nav-1,
+header .nav nav .nav-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+header .nav nav .nav-1 li,
+header .nav nav .nav-2 li {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+header .nav nav .nav-1 li a,
+header .nav nav .nav-2 li a {
+  cursor: pointer;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+header .nav nav .nav-1 li a:hover,
+header .nav nav .nav-2 li a:hover {
+  color: #969696;
+}
+header .nav nav .nav-1 {
+  margin-right: 20px;
+}
+header .nav nav .nav-2 {
+  margin-left: 20px;
+}
+header .nav .logo {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 450px;
+}
+
+/*---------- section ----------*/
+section {
+  width: 100%;
+  background: #000;
+  padding-bottom: 100px;
+}
+section .projet {
+  position: relative;
+  width: 90%;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+section .projet .img-projet {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.297);
+}
+section .projet .img-projet .img {
+  width: 100%;
+  height: 30vh;
+  transition: all 0.3s ease-in;
+}
+section .projet .img-projet .img:hover {
+  transform: scale(1.5);
+}
+section .projet .img-projet .img:active {
+  transition: 0s;
+  transform: scale(1);
+}
+section .projet .img-projet .prjt {
+  position: absolute;
+  color: #f1f1f1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: larger;
+  font-weight: bold;
+}
+
+/*---------- footer ----------*/
+footer {
+  width: 100%;
+  background: #000;
+  color: #f1f1f1;
+  height: 60vh;
+  padding-bottom: 10vh;
+}
+footer .newsletter,
+footer .reseau {
+  margin: auto;
+  display: flex;
+  width: 60%;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .newsletter .news,
+footer .reseau .news {
+  width: 30%;
+}
+footer .newsletter .news h2,
+footer .reseau .news h2 {
+  font-size: xx-large;
+  width: 200px;
+  border-bottom: 5px solid #f1f1f1;
+  margin-bottom: 20px;
+}
+footer .newsletter .news p,
+footer .reseau .news p {
+  width: 120%;
+}
+footer .newsletter .mail form,
+footer .reseau .mail form {
+  display: flex;
+  flex-direction: column;
+}
+footer .newsletter .mail form input,
+footer .reseau .mail form input {
+  margin-bottom: 10px;
+  padding: 10px 150px 10px 10px;
+}
+footer .newsletter .mail form button,
+footer .reseau .mail form button {
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+  background: #a01762;
+  border: none;
+  color: #f1f1f1;
+  font-weight: bolder;
+}
+footer .reseau {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .reseau i {
+  cursor: pointer;
+  font-size: xx-large;
+  transition: 0.3s;
+}
+footer .reseau i:hover {
+  color: #a01762;
+  transform: translatey(-10px);
+}
+
+/*# sourceMappingURL=style.css.map */
