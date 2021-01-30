@@ -4,29 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leny Laurenti Photographie</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="nav">
         <nav>
           <ul class="nav-1">
-            <li><a href="#"> GALLERIE </a></li>
-            <li><a href="#"> PRÉSTATIONS </a></li>
+            <!-- lien galleries -->
+            <li class="lien-principal">
+              <a href="./html/gallerie.html">
+                GALLERIE
+                <ul class="sous-menu">
+                  <li class="lien-secondaire">
+                    <a href="./html/page-gallerie/paysage.html"> Paysage</a>
+                  </li>
+                  <li class="lien-secondaire">
+                    <a href="./html/page-gallerie/animaux.html"> Animaux</a>
+                  </li>
+                  <li class="lien-secondaire">
+                    <a href="./html/page-gallerie/evenemenciels.html"> Événemenciels</a>
+                  </li>
+                  <li class="lien-secondaire">
+                    <a href="./html/page-gallerie/models.html"> Models</a>
+                  </li>
+                  <li class="lien-secondaire">
+                    <a href="./html/page-gallerie/sport.html"> Sport</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <!-- lien Prestations -->
+            <li class="lien-principal">
+              <a href="./html/prestations.html">
+                PRESTATIONS
+              </a>
+            </li>
+
+            <!-- lien Realisations -->
+            <li class="lien-principal">
+              <a href="./html/realisation.html">
+                RÉALISATION
+              </a>
+            </li>
           </ul>
-          <h1>Leny <br />Laurenti</h1>
+          <h1>
+            <a href="#">Leny <br />Laurenti</a>
+          </h1>
           <ul class="nav-2">
-            <li><a href="#contact"> CONTACT </a></li>
-            <li><a href="#"> À PROPOS </a></li>
+            <li class="lien-principal"><a href="#contact"> CONTACT </a></li>
+            <li class="lien-principal">
+              <a href="./html/a-propos.html"> À PROPOS </a>
+            </li>
           </ul>
         </nav>
-        <img src="./images/mon logo png.png" class="logo" alt="" />
+        <a href="index.html"
+          ><img src="./images/mon logo png.png" class="logo" alt=""
+        /></a>
       </div>
     </header>
 
-    <section>
+    <section class="section-acceuil">
       <div class="projet">
         <div
           class="img-projet"
@@ -74,7 +120,7 @@
         </div>
         <div class="mail">
           <form>
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email" />
             <button>S'ABONNER</button>
           </form>
         </div>
@@ -93,7 +139,7 @@
       integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
