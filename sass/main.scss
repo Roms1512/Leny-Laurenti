@@ -232,6 +232,8 @@ section {
       position: relative;
       margin: auto 20px;
       overflow: hidden;
+      background: #000;
+      z-index: 1000;
       a {
         color: $color1;
         text-decoration: none;
@@ -240,11 +242,13 @@ section {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          z-index: -1000;
         }
         img {
           height: 100%;
           width: 100%;
           transition: all 0.3s;
+          z-index: -1000;
         }
         &:hover {
           h1{
